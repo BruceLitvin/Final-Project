@@ -25,11 +25,7 @@ public class Main{
            else if(activity.equals("GoalR")){
                f.goalRemove();
            }
-           else if(activity.equals("End")){
-               lock= false;
-
-           }
-           else if(activity.equals("end")){
+           else if(activity.equalsIgnoreCase("end")){
                lock= false;
 
            }

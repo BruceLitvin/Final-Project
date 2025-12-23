@@ -20,8 +20,8 @@ public class Planner {
             itemList[hour] = activity;
             System.out.println("Want to add something else?");
             String response = s.next();
-            if (response.equals("No")) control = false;
-            else if (response.equals("no")) control = false;
+            if (response.equalsIgnoreCase("No")) control = false;
+
         }
     }
 
@@ -74,9 +74,7 @@ public class Planner {
             String goal = g.next();
             System.out.println("Another one?");
             String answer = g.next();
-            if (answer.equals("no")) {
-                goals = false;
-            } else if (answer.equals("No")) {
+            if (answer.equalsIgnoreCase("no")) {
                 goals = false;
             }
             goalPlace(goal);
