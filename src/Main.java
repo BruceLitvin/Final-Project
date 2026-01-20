@@ -13,16 +13,16 @@ public class Main{
            Scanner a = new Scanner(System.in);
            System.out.println("What would you like to do");
            String activity = a.next();
-           if(activity.equals("EventA")){
+           if(activity.equalsIgnoreCase("EventA")){
                f.add();
            }
-           else if(activity.equals("EventR")){
+           else if(activity.equalsIgnoreCase("EventR")){
                f.remove();
            }
-           else if(activity.equals("GoalA")){
+           else if(activity.equalsIgnoreCase("GoalA")){
                f.goalInput();
            }
-           else if(activity.equals("GoalR")){
+           else if(activity.equalsIgnoreCase("GoalR")){
                f.goalRemove();
            }
            else if(activity.equalsIgnoreCase("end")){

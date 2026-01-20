@@ -35,7 +35,7 @@ public class Planner {
         while (exists) {
             Scanner f = new Scanner(System.in);
             System.out.println("Type the hour of the activity you want removed if any?");
-            int response = f.nextInt();  //9
+            int response = f.nextInt();
             if (response > 24 || response < 0) {
                 exists = false;
                 System.out.println("Not an element");
